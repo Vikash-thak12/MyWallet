@@ -1,11 +1,19 @@
 import './App.css'
+import { Navbar, Footer, Loader, Services, Transactions, Welcome } from "./components"
 
 function App() {
 
   return (
-    <>
-    <h1>Hey yo</h1>
-    </>
+    <main>
+      <div className='gradient-bg-welcome'>
+        <Navbar />
+        <Welcome />
+      </div>
+      <Loader />
+      <Services />
+      <Transactions />
+      <Footer />
+    </main>
   )
 }
 
